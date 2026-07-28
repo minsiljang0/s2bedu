@@ -163,24 +163,37 @@ function UploadPanel({ adminToken, showToast }) {
 
       <div style={S.card}>
         <div style={S.cardTitle}>등록된 월 ({months.length}개)</div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
-          {[...months].sort().reverse().map((m) => (
-            <div key={m} style={{ ...S.row, position: 'relative' }}>
-              <button
-                onClick={() => setDeleteTarget({ name: m })}
-                title="삭제"
-                style={{
-                  position: 'absolute', top: 6, right: 6, width: 20, height: 20,
-                  border: 'none', borderRadius: 6, background: '#fee2e2', color: '#dc2626',
-                  fontSize: 12, fontWeight: 700, cursor: 'pointer', lineHeight: '20px', padding: 0,
-                }}
-              >✕</button>
-              <div style={{ fontWeight: 700, fontSize: 13 }}>{m}</div>
-              <div style={{ fontSize: 11, color: '#8a9ab0', marginTop: 2 }}>{counts[m]}건</div>
+        {(() => {
+          const grouped = {}
+          for (const m of [...months].sort().reverse()) {
+            const year = m.slice(0, 4)
+            ;(grouped[year] = grouped[year] || []).push(m)
+          }
+          const years = Object.keys(grouped).sort().reverse()
+          return years.map((y) => (
+            <div key={y} style={{ marginBottom: 18 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: '#2563eb', marginBottom: 8 }}>{y}년 ({grouped[y].length}개)</div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
+                {grouped[y].map((m) => (
+                  <div key={m} style={{ ...S.row, position: 'relative' }}>
+                    <button
+                      onClick={() => setDeleteTarget({ name: m })}
+                      title="삭제"
+                      style={{
+                        position: 'absolute', top: 6, right: 6, width: 20, height: 20,
+                        border: 'none', borderRadius: 6, background: '#fee2e2', color: '#dc2626',
+                        fontSize: 12, fontWeight: 700, cursor: 'pointer', lineHeight: '20px', padding: 0,
+                      }}
+                    >✕</button>
+                    <div style={{ fontWeight: 700, fontSize: 13 }}>{m}</div>
+                    <div style={{ fontSize: 11, color: '#8a9ab0', marginTop: 2 }}>{counts[m]}건</div>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-          {months.length === 0 && <p style={{ fontSize: 13, color: '#8a9ab0' }}>아직 등록된 데이터가 없어요.</p>}
-        </div>
+          ))
+        })()}
+        {months.length === 0 && <p style={{ fontSize: 13, color: '#8a9ab0' }}>아직 등록된 데이터가 없어요.</p>}
       </div>
 
       <DeleteModal
