@@ -1,16 +1,10 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { MONTHS, monthLabel, getMonthData, tagRow } from '../../lib/data'
+import { getMonthRows, monthLabel, tagRow } from '../../lib/s2bData'
 
-export async function getStaticPaths() {
-  return {
-    paths: MONTHS.map((key) => ({ params: { key } })),
-    fallback: false,
-  }
-}
-
-export async function getStaticProps({ params }) {
-  return { props: { monthKey: params.key, rows: getMonthData(params.key) } }
+export async function getServerSideProps({ params }) {
+  const rows = await getMonthRows(params.key)
+  return { props: { monthKey: params.key, rows } }
 }
 
 export default function MonthPage({ monthKey, rows }) {
@@ -31,6 +25,14 @@ export default function MonthPage({ monthKey, rows }) {
     }
     return [...list].sort((a, b) => b[sortBy] - a[sortBy])
   }, [tagged, q, hideFiltered, sortBy])
+
+  if (!rows.length) {
+    return (
+      <div className="empty-state">
+        <p>이 달 데이터가 없어요. 관리자 화면에서 엑셀을 등록해주세요.</p>
+      </div>
+    )
+  }
 
   return (
     <>

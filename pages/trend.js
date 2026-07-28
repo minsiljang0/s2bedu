@@ -1,7 +1,23 @@
-import { aiTrendByMonth } from '../lib/data'
+import { getAllMonths, getMonthRows, monthLabel, tagRow } from '../lib/s2bData'
 
-export async function getStaticProps() {
-  return { props: { trend: aiTrendByMonth() } }
+export async function getServerSideProps() {
+  const months = await getAllMonths()
+  const trend = []
+  for (const key of months) {
+    const rows = await getMonthRows(key)
+    const aiRows = rows.filter((r) => tagRow(r).key === 'ai')
+    trend.push({
+      key,
+      label: monthLabel(key),
+      totalContracts: aiRows.reduce((s, r) => s + r.contracts, 0),
+      productCount: aiRows.length,
+      topProducts: aiRows
+        .sort((a, b) => b.contracts - a.contracts)
+        .slice(0, 5)
+        .map((r) => `${r.name}(${r.contracts}건)`),
+    })
+  }
+  return { props: { trend } }
 }
 
 export default function TrendPage({ trend }) {

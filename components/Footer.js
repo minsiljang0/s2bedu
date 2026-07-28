@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -8,6 +10,7 @@ export default function Footer() {
         <div className="footer-links">
           <a href="https://www.s2b.kr" target="_blank" rel="noreferrer">S2B 공식 사이트</a>
         </div>
+        <Link href="/admin" className="admin-link">admin</Link>
       </div>
     </footer>
   )

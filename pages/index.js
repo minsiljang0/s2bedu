@@ -1,9 +1,16 @@
 import Link from 'next/link'
-import { MONTHS, monthLabel, getMonthData, tagRow } from '../lib/data'
+import { getAllMonths, getMonthRows, monthLabel } from '../lib/s2bData'
 
-export default function Home() {
-  const sortedMonths = [...MONTHS].sort().reverse()
-  const totalRows = MONTHS.reduce((s, m) => s + getMonthData(m).length, 0)
+export async function getServerSideProps() {
+  const months = await getAllMonths()
+  const counts = {}
+  for (const m of months) counts[m] = (await getMonthRows(m)).length
+  return { props: { months, counts } }
+}
+
+export default function Home({ months, counts }) {
+  const sortedMonths = [...months].sort().reverse()
+  const totalRows = Object.values(counts).reduce((s, c) => s + c, 0)
 
   return (
     <>
@@ -11,7 +18,7 @@ export default function Home() {
         <div className="hero-badge">🏫 학교장터(S2B) 판매통계 아카이브</div>
         <h1 className="hero-title">학교장터에서<br />뭐가 진짜 잘 팔릴까</h1>
         <p className="hero-sub">
-          S2B가 공식 공개하는 월별 TOP100 판매통계 {MONTHS.length}개월치, 총 {totalRows}건을 모아
+          S2B가 공식 공개하는 월별 TOP100 판매통계 {months.length}개월치, 총 {totalRows}건을 모아
           카테고리별로 걸러봤습니다. 상품권/마스크/RFID/복사용지처럼 겉보기엔 많이 팔리지만
           실제로는 저마진이거나 이미 끝난 특수, 혹은 진입 자체가 막힌 카테고리를 걸러내고 나면
           무엇이 남는지 확인하세요.
@@ -59,7 +66,7 @@ export default function Home() {
             <Link key={key} href={`/month/${key}`} className="card">
               <div style={{ fontSize: 16, fontWeight: 800 }}>{monthLabel(key)}</div>
               <div style={{ fontSize: 12, color: 'var(--text3)', marginTop: 6 }}>
-                TOP {getMonthData(key).length} · 계약건수 기준 정렬 가능
+                {counts[key]}건 등록됨 · 계약건수 기준 정렬 가능
               </div>
             </Link>
           ))}
