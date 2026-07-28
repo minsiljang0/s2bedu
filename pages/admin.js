@@ -89,6 +89,14 @@ function UploadPanel({ adminToken, showToast }) {
   }
   useEffect(refresh, [])
 
+  const refreshAnalysisNow = () => {
+    showToast('📈 분석 계산 중...')
+    fetch('/api/admin/refresh-analysis', { method: 'POST', headers: { 'x-admin-token': adminToken } })
+      .then((r) => r.json())
+      .then((d) => showToast(d.ok ? '📈 분석 갱신 완료' : `❌ ${d.error}`))
+      .catch(() => showToast('❌ 분석 갱신 실패'))
+  }
+
   const grouped = {}
   for (const m of [...months].sort().reverse()) {
     const year = m.slice(0, 4)
@@ -177,7 +185,10 @@ function UploadPanel({ adminToken, showToast }) {
       </div>
 
       <div style={S.card}>
-        <div style={S.cardTitle}>등록된 월 ({months.length}개)</div>
+        <div style={{ ...S.cardTitle, justifyContent: 'space-between' }}>
+          <span>등록된 월 ({months.length}개)</span>
+          <button onClick={refreshAnalysisNow} style={{ ...S.btnGhost, padding: '6px 14px', fontSize: 12 }}>📈 지금 분석 갱신</button>
+        </div>
 
         {years.length > 0 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 16, borderBottom: '1px solid #d6e2f2', paddingBottom: 12 }}>
