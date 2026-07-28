@@ -10,7 +10,7 @@ export async function getServerSideProps({ params }) {
 export default function MonthPage({ monthKey, rows }) {
   const [q, setQ] = useState('')
   const [hideFiltered, setHideFiltered] = useState(false)
-  const [sortBy, setSortBy] = useState('contracts')
+  const [sortBy, setSortBy] = useState('qty')
 
   const tagged = useMemo(() => rows.map((r) => ({ ...r, tag: tagRow(r) })), [rows])
 
@@ -23,7 +23,7 @@ export default function MonthPage({ monthKey, rows }) {
     if (hideFiltered) {
       list = list.filter((r) => r.tag.key === 'ai' || r.tag.key === 'other')
     }
-    return [...list].sort((a, b) => b[sortBy] - a[sortBy])
+    return [...list].sort((a, b) => sortBy === 'rank' ? a.rank - b.rank : b[sortBy] - a[sortBy])
   }, [tagged, q, hideFiltered, sortBy])
 
   if (!rows.length) {
@@ -53,6 +53,7 @@ export default function MonthPage({ monthKey, rows }) {
           onChange={(e) => setQ(e.target.value)}
         />
         <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <option value="rank">순번 순</option>
           <option value="contracts">계약건수 순</option>
           <option value="qty">판매수량 순</option>
         </select>
@@ -83,7 +84,7 @@ export default function MonthPage({ monthKey, rows }) {
               <tr key={`${r.rank}-${i}`}>
                 <td>{r.rank}</td>
                 <td className="name-cell">{r.name}</td>
-                <td><span className="tag">{r.cat1} · {r.cat2}</span></td>
+                <td><span className="tag">{[r.cat1, r.cat2, r.cat3].filter(Boolean).join(' · ')}</span></td>
                 <td><span className={`badge ${r.tag.cls}`}>{r.tag.label}</span></td>
                 <td className="num">{r.contracts.toLocaleString()}</td>
                 <td className="num">{r.qty.toLocaleString()}</td>
