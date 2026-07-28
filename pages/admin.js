@@ -48,10 +48,22 @@ function LoginScreen({ onLogin }) {
   )
 }
 
+async function uploadOneFile(file, adminToken) {
+  const guessed = guessMonth(file.name)
+  const content = await fileToBase64(file)
+  const res = await fetch('/api/admin/upload-excel', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-admin-token': adminToken },
+    body: JSON.stringify({ filename: file.name, month: guessed, content }),
+  })
+  const data = await res.json()
+  if (!res.ok) throw new Error(data.error || '업로드 실패')
+  return data
+}
+
 function UploadPanel({ adminToken, showToast }) {
-  const [file, setFile] = useState(null)
-  const [month, setMonth] = useState('')
-  const [uploading, setUploading] = useState(false)
+  const [dragOver, setDragOver] = useState(false)
+  const [queue, setQueue] = useState([]) // [{name, status: 'pending'|'done'|'error', message}]
   const [months, setMonths] = useState([])
   const [counts, setCounts] = useState({})
 
@@ -63,25 +75,33 @@ function UploadPanel({ adminToken, showToast }) {
   }
   useEffect(refresh, [])
 
-  const upload = async () => {
-    if (!file || !month) { showToast('파일과 연-월을 모두 입력하세요'); return }
-    setUploading(true)
-    try {
-      const content = await fileToBase64(file)
-      const res = await fetch('/api/admin/upload-excel', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-admin-token': adminToken },
-        body: JSON.stringify({ filename: file.name, month, content }),
-      })
-      const data = await res.json()
-      if (!res.ok) { showToast(`❌ ${data.error}`); setUploading(false); return }
-      showToast(`✅ ${data.month} — ${data.count}건 등록됨`)
-      setFile(null)
-      refresh()
-    } catch (e) {
-      showToast(`❌ ${e.message}`)
+  const processFiles = async (fileList) => {
+    const files = Array.from(fileList).filter((f) => f.name.toLowerCase().endsWith('.xls'))
+    if (!files.length) { showToast('.xls 파일만 올릴 수 있어요'); return }
+
+    setQueue(files.map((f) => ({ name: f.name, status: 'pending', message: '' })))
+
+    for (let i = 0; i < files.length; i++) {
+      const f = files[i]
+      const month = guessMonth(f.name)
+      if (!month) {
+        setQueue((q) => q.map((item, idx) => idx === i ? { ...item, status: 'error', message: '파일명에서 연-월을 못 읽음' } : item))
+        continue
+      }
+      try {
+        const data = await uploadOneFile(f, adminToken)
+        setQueue((q) => q.map((item, idx) => idx === i ? { ...item, status: 'done', message: `${data.month} — ${data.count}건` } : item))
+      } catch (e) {
+        setQueue((q) => q.map((item, idx) => idx === i ? { ...item, status: 'error', message: e.message } : item))
+      }
     }
-    setUploading(false)
+    refresh()
+  }
+
+  const onDrop = (e) => {
+    e.preventDefault()
+    setDragOver(false)
+    if (e.dataTransfer.files?.length) processFiles(e.dataTransfer.files)
   }
 
   return (
@@ -89,25 +109,43 @@ function UploadPanel({ adminToken, showToast }) {
       <div style={S.card}>
         <div style={S.cardTitle}>📊 S2B 엑셀 등록</div>
         <p style={{ fontSize: 13, color: '#4b5d78', marginBottom: 20 }}>
-          S2B My Desk &gt; 물품판매현황 &gt; S2B전체판매통계에서 받은 .xls 파일을 그대로 올리세요.
+          S2B My Desk &gt; 물품판매현황 &gt; S2B전체판매통계에서 받은 .xls 파일을 여러 개 한번에 드래그해서 놓으면
+          파일명에서 연-월을 자동으로 읽어서 파싱 후 등록해요.
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 420 }}>
-          <div>
-            <label style={S.label}>엑셀 파일 (.xls)</label>
-            <input type="file" accept=".xls" onChange={(e) => {
-              const f = e.target.files[0]
-              setFile(f)
-              if (f) setMonth(guessMonth(f.name))
-            }} />
-          </div>
-          <div>
-            <label style={S.label}>연-월</label>
-            <input type="text" placeholder="2026-07" value={month} onChange={(e) => setMonth(e.target.value)} style={S.input} />
-          </div>
-          <button onClick={upload} disabled={uploading} style={{ ...S.btn(), alignSelf: 'flex-start', opacity: uploading ? 0.6 : 1 }}>
-            {uploading ? '업로드 중...' : '업로드'}
-          </button>
+
+        <div
+          onDragOver={(e) => { e.preventDefault(); setDragOver(true) }}
+          onDragLeave={() => setDragOver(false)}
+          onDrop={onDrop}
+          onClick={() => document.getElementById('xls-input').click()}
+          style={{
+            border: `2px dashed ${dragOver ? '#2563eb' : '#d6e2f2'}`,
+            borderRadius: 12, padding: '40px 20px', textAlign: 'center',
+            background: dragOver ? '#eef3fa' : '#f4f7fb', cursor: 'pointer',
+            transition: 'all .15s',
+          }}
+        >
+          <div style={{ fontSize: 28, marginBottom: 8 }}>📥</div>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#0f1a2b' }}>여기에 .xls 파일을 드래그하세요 (여러 개 가능)</div>
+          <div style={{ fontSize: 12, color: '#8a9ab0', marginTop: 4 }}>또는 클릭해서 선택</div>
+          <input
+            id="xls-input" type="file" accept=".xls" multiple style={{ display: 'none' }}
+            onChange={(e) => { if (e.target.files?.length) processFiles(e.target.files); e.target.value = '' }}
+          />
         </div>
+
+        {queue.length > 0 && (
+          <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {queue.map((item, i) => (
+              <div key={i} style={{ ...S.row, display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 0 }}>
+                <span style={{ fontSize: 13 }}>{item.name}</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: item.status === 'done' ? '#16a34a' : item.status === 'error' ? '#dc2626' : '#8a9ab0' }}>
+                  {item.status === 'pending' ? '처리중...' : item.message}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       <div style={S.card}>
