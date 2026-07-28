@@ -24,7 +24,12 @@ export default function AnalysisPage({ scope, years, data }) {
     )
   }
 
-  const { totalMonths, totalRows, steady, byCalendarMonth, calendarBars, bulkDeals, updatedAt } = data
+  // 코드는 최신인데 캐시(s2b_analysis_cache)는 새 필드 추가 전에 계산된 옛날 값일 수 있다
+  // (관리자가 "지금 분석 갱신"을 다시 누르기 전까지). 그 사이에도 화면이 안 터지게 기본값을 둔다.
+  const {
+    totalMonths = 0, totalRows = 0, steady = [], byCalendarMonth = {},
+    calendarBars = [], bulkDeals = [], updatedAt,
+  } = data
 
   return (
     <>
@@ -52,13 +57,13 @@ export default function AnalysisPage({ scope, years, data }) {
               <div className="bar-row" style={{ marginBottom: 4 }}>
                 <div className="bar-label" style={{ width: 70, fontSize: 11 }}>계약건수</div>
                 <div className="bar-track">
-                  <div className="bar-fill" style={{ width: `${Math.max(b.contractsPct, 4)}%` }}>{b.contracts.toLocaleString()}</div>
+                  <div className="bar-fill" style={{ width: `${Math.max(b.contractsPct || 0, 4)}%` }}>{(b.contracts || 0).toLocaleString()}</div>
                 </div>
               </div>
               <div className="bar-row">
                 <div className="bar-label" style={{ width: 70, fontSize: 11 }}>판매수량</div>
                 <div className="bar-track">
-                  <div className="bar-fill" style={{ width: `${Math.max(b.qtyPct, 4)}%`, background: 'linear-gradient(90deg, #16a34a, #22c55e)' }}>{b.qty.toLocaleString()}</div>
+                  <div className="bar-fill" style={{ width: `${Math.max(b.qtyPct || 0, 4)}%`, background: 'linear-gradient(90deg, #16a34a, #22c55e)' }}>{(b.qty || 0).toLocaleString()}</div>
                 </div>
               </div>
             </div>
@@ -122,8 +127,8 @@ export default function AnalysisPage({ scope, years, data }) {
                   <td><span className="tag">{p.cat1}</span></td>
                   <td className="num">{p.monthCount}개월</td>
                   <td className="num">{p.coverage}%</td>
-                  <td className="num">{p.avgContracts.toLocaleString()}</td>
-                  <td className="num">{p.avgQty.toLocaleString()}</td>
+                  <td className="num">{(p.avgContracts || 0).toLocaleString()}</td>
+                  <td className="num">{(p.avgQty || 0).toLocaleString()}</td>
                 </tr>
               ))}
               {steady.length === 0 && (
@@ -146,7 +151,7 @@ export default function AnalysisPage({ scope, years, data }) {
               {byCalendarMonth[key].map((p, i) => (
                 <div key={p.name + i} style={{ fontSize: 12, marginBottom: 6, display: 'flex', justifyContent: 'space-between', gap: 8 }}>
                   <span style={{ color: 'var(--text)' }}>{p.name}</span>
-                  <span style={{ color: 'var(--text3)', flexShrink: 0 }}>{p.totalContracts.toLocaleString()}건 · {p.totalQty.toLocaleString()}개</span>
+                  <span style={{ color: 'var(--text3)', flexShrink: 0 }}>{(p.totalContracts || 0).toLocaleString()}건 · {(p.totalQty || 0).toLocaleString()}개</span>
                 </div>
               ))}
             </div>
