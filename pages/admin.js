@@ -95,6 +95,7 @@ function UploadPanel({ adminToken, showToast }) {
       .then((r) => r.json())
       .then((d) => showToast(d.ok ? '📈 분석 갱신 완료' : `❌ ${d.error}`))
       .catch(() => showToast('❌ 분석 갱신 실패'))
+      .finally(refresh)
   }
 
   const grouped = {}
@@ -127,11 +128,12 @@ function UploadPanel({ adminToken, showToast }) {
         setQueue((q) => q.map((item, idx) => idx === i ? { ...item, status: 'error', message: e.message } : item))
       }
     }
-    refresh()
     // 파일 하나씩이 아니라 이 배치 업로드 전체가 끝난 뒤 딱 한 번만 분석을 다시 계산한다.
+    // /api/s2b/months도 이제 이 캐시를 읽으므로, 캐시 갱신이 끝난 뒤에 목록을 새로고침해야 방금 올린 게 바로 보인다.
     fetch('/api/admin/refresh-analysis', { method: 'POST', headers: { 'x-admin-token': adminToken } })
       .then(() => showToast('📈 분석 갱신 완료'))
       .catch(() => {})
+      .finally(refresh)
   }
 
   const onDrop = (e) => {

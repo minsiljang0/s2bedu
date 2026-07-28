@@ -1,8 +1,8 @@
-import { getAllMonths, getMonthRows } from '../../../lib/s2bData'
+import { getCachedAnalysis } from '../../../lib/s2bAnalysis'
 
 export default async function handler(req, res) {
-  const months = await getAllMonths()
-  const counts = {}
-  for (const m of months) counts[m] = (await getMonthRows(m)).length
+  const analysis = await getCachedAnalysis('all')
+  const counts = analysis?.monthCounts || {}
+  const months = Object.keys(counts)
   res.status(200).json({ months, counts })
 }
