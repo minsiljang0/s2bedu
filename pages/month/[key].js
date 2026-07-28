@@ -84,7 +84,13 @@ export default function MonthPage({ monthKey, rows }) {
               <tr key={`${r.rank}-${i}`}>
                 <td>{r.rank}</td>
                 <td className="name-cell">{r.name}</td>
-                <td><span className="tag">{[r.cat1, r.cat2, r.cat3].filter(Boolean).join(' · ')}</span></td>
+                <td>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 3, alignItems: 'flex-start' }}>
+                    {[r.cat1, r.cat2, r.cat3].filter(Boolean).map((c, ci) => (
+                      <span key={ci} className="tag" style={{ opacity: 1 - ci * 0.25 }}>{c}</span>
+                    ))}
+                  </div>
+                </td>
                 <td><span className={`badge ${r.tag.cls}`}>{r.tag.label}</span></td>
                 <td className="num">{r.contracts.toLocaleString()}</td>
                 <td className="num">{r.qty.toLocaleString()}</td>
