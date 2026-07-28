@@ -1,6 +1,5 @@
 import { createMcpHandler } from 'mcp-handler'
 import { z } from 'zod'
-import seed from '../../../data/s2b-top100.json'
 import { parseS2bXls } from '../../../lib/parseS2bXls'
 import { getSupabaseAdmin } from '../../../lib/supabaseAdmin'
 
@@ -35,19 +34,19 @@ function tagRow(row) {
   return 'other'
 }
 
-// DB(Supabase)가 설정돼있으면 그걸, 아니면 빌드에 포함된 seed JSON을 읽는다. 조회 도구 전용.
+// 전부 Supabase 기준. seed/fallback 없음.
 async function readMonths() {
   const supabase = getSupabaseAdmin()
-  if (supabase) {
-    const { data, error } = await supabase.from('s2b_top100_rows').select('month').order('month')
-    if (!error && data && data.length) return [...new Set(data.map((r) => r.month))].sort()
-  }
-  return Object.keys(seed).sort()
+  if (!supabase) return []
+  const { data, error } = await supabase.from('s2b_top100_rows').select('month').order('month').range(0, 49999)
+  if (error || !data) return []
+  return [...new Set(data.map((r) => r.month))].sort()
 }
 
 async function readMonthRows(month) {
   const supabase = getSupabaseAdmin()
-  if (supabase) {
+  if (!supabase) return []
+  {
     const { data, error } = await supabase
       .from('s2b_top100_rows')
       .select('rank,name,cat1,cat2,cat3,contracts,qty')
@@ -55,7 +54,7 @@ async function readMonthRows(month) {
       .order('rank')
     if (!error && data && data.length) return data
   }
-  return seed[month] || []
+  return []
 }
 
 const handler = createMcpHandler(
