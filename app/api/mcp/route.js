@@ -1,8 +1,8 @@
 import { createMcpHandler } from 'mcp-handler'
 import { z } from 'zod'
-import data from '../../../data/s2b-top100.json'
-
-const MONTHS = Object.keys(data).sort()
+import seed from '../../../data/s2b-top100.json'
+import { parseS2bXls } from '../../../lib/parseS2bXls'
+import { getSupabaseAdmin } from '../../../lib/supabaseAdmin'
 
 const GITHUB_OWNER = process.env.GITHUB_OWNER || 'minsiljang0'
 const GITHUB_REPO = process.env.GITHUB_REPO || 's2bedu'
@@ -35,36 +35,60 @@ function tagRow(row) {
   return 'other'
 }
 
+// DB(Supabase)가 설정돼있으면 그걸, 아니면 빌드에 포함된 seed JSON을 읽는다. 조회 도구 전용.
+async function readMonths() {
+  const supabase = getSupabaseAdmin()
+  if (supabase) {
+    const { data, error } = await supabase.from('s2b_top100_rows').select('month').order('month')
+    if (!error && data && data.length) return [...new Set(data.map((r) => r.month))].sort()
+  }
+  return Object.keys(seed).sort()
+}
+
+async function readMonthRows(month) {
+  const supabase = getSupabaseAdmin()
+  if (supabase) {
+    const { data, error } = await supabase
+      .from('s2b_top100_rows')
+      .select('rank,name,cat1,cat2,cat3,contracts,qty')
+      .eq('month', month)
+      .order('rank')
+    if (!error && data && data.length) return data
+  }
+  return seed[month] || []
+}
+
 const handler = createMcpHandler(
   (server) => {
+    // ── 조회 ──────────────────────────────────────────────
     server.tool(
       'list_months',
-      'S2B 월별 TOP100 판매통계 데이터가 있는 연-월 목록을 반환한다.',
+      'DB(Supabase)에 등록된, 또는 없으면 seed 데이터의 연-월 목록을 반환한다.',
       {},
-      async () => text(JSON.stringify(MONTHS))
+      async () => text(JSON.stringify(await readMonths()))
     )
 
     server.tool(
       'get_month_top100',
-      '특정 연-월(예: "2026-06")의 S2B TOP100 판매통계 원본 100건을 반환한다. 각 행에 순위/상품명/카테고리/계약건수/판매수량이 있다.',
+      '특정 연-월(예: "2026-06")의 S2B TOP100 판매통계를 반환한다.',
       { month: z.string().describe('연-월 형식, 예: 2026-06') },
       async ({ month }) => {
-        const rows = data[month]
-        if (!rows) return text(`데이터 없음. 사용 가능한 월: ${MONTHS.join(', ')}`)
+        const rows = await readMonthRows(month)
+        if (!rows.length) return text(`데이터 없음: ${month}`)
         return text(JSON.stringify(rows))
       }
     )
 
     server.tool(
       'search_products',
-      '전체 기간(모든 월)에서 상품명에 특정 키워드가 포함된 행을 검색한다.',
+      '등록된 모든 월에서 상품명에 특정 키워드가 포함된 행을 검색한다.',
       { keyword: z.string() },
       async ({ keyword }) => {
+        const months = await readMonths()
         const out = []
-        for (const month of MONTHS) {
-          for (const row of data[month]) {
-            if (row.name.includes(keyword)) out.push({ month, ...row })
-          }
+        for (const month of months) {
+          const rows = await readMonthRows(month)
+          for (const row of rows) if (row.name.includes(keyword)) out.push({ month, ...row })
         }
         return text(JSON.stringify(out))
       }
@@ -72,40 +96,120 @@ const handler = createMcpHandler(
 
     server.tool(
       'get_ai_courseware_trend',
-      'AI 코스웨어/AI 구독 카테고리로 태깅된 상품들의 월별 계약건수 합계 추이를 반환한다 (2024년부터 시작된 성장 트렌드 확인용).',
+      'AI 코스웨어/AI 구독으로 태깅된 상품들의 월별 계약건수 합계 추이를 반환한다.',
       {},
       async () => {
-        const trend = MONTHS.map((month) => {
-          const aiRows = data[month].filter((r) => tagRow(r) === 'ai(성장중)')
-          return {
+        const months = await readMonths()
+        const trend = []
+        for (const month of months) {
+          const rows = await readMonthRows(month)
+          const aiRows = rows.filter((r) => tagRow(r) === 'ai(성장중)')
+          trend.push({
             month,
             productCount: aiRows.length,
             totalContracts: aiRows.reduce((s, r) => s + r.contracts, 0),
-            topProducts: aiRows
-              .sort((a, b) => b.contracts - a.contracts)
-              .slice(0, 5)
-              .map((r) => `${r.name}(${r.contracts}건)`),
-          }
-        })
+            topProducts: aiRows.sort((a, b) => b.contracts - a.contracts).slice(0, 5).map((r) => `${r.name}(${r.contracts}건)`),
+          })
+        }
         return text(JSON.stringify(trend))
       }
     )
 
     server.tool(
       'tag_excluded_categories',
-      '특정 월 데이터에서 각 상품이 왜 "진짜 기회"가 아닌지(상품권=저마진, 복사용지=장애인생산품 의무구매 채널, 마스크/RFID=끝난 특수트렌드) 태깅해서 반환한다.',
-      { month: z.string().describe('연-월 형식, 예: 2026-06') },
+      '특정 월 데이터에서 각 상품이 왜 "진짜 기회"가 아닌지(상품권/장애인생산품 채널/끝난 특수트렌드) 태깅해서 반환한다.',
+      { month: z.string() },
       async ({ month }) => {
-        const rows = data[month]
-        if (!rows) return text(`데이터 없음. 사용 가능한 월: ${MONTHS.join(', ')}`)
+        const rows = await readMonthRows(month)
+        if (!rows.length) return text(`데이터 없음: ${month}`)
         return text(JSON.stringify(rows.map((r) => ({ ...r, tag: tagRow(r) }))))
       }
     )
 
+    // ── DB 쓰기 (Supabase 필요) ──────────────────────────────
+    server.tool(
+      'list_tables',
+      's2bedu가 쓰는 Supabase 테이블 목록과 스키마를 반환한다.',
+      {},
+      async () => text(JSON.stringify({
+        s2b_top100_rows: 'id, month(text), rank(int), name(text), cat1/cat2/cat3(text), contracts(int), qty(int), created_at — unique(month, rank)',
+      }))
+    )
+
+    server.tool(
+      'get_rows',
+      's2b_top100_rows 테이블에서 조건에 맞는 행을 그대로 가져온다 (month 필터 선택).',
+      { month: z.string().optional(), limit: z.number().optional() },
+      async ({ month, limit }) => {
+        const supabase = getSupabaseAdmin()
+        if (!supabase) return text('오류: Supabase 미설정')
+        let q = supabase.from('s2b_top100_rows').select('*').order('month').order('rank')
+        if (month) q = q.eq('month', month)
+        if (limit) q = q.limit(limit)
+        const { data, error } = await q
+        if (error) return text(`오류: ${error.message}`)
+        return text(JSON.stringify(data))
+      }
+    )
+
+    server.tool(
+      'upsert_row',
+      's2b_top100_rows에 행 하나를 직접 등록/수정한다 (month+rank 기준 upsert).',
+      {
+        month: z.string(), rank: z.number(), name: z.string(),
+        cat1: z.string().optional(), cat2: z.string().optional(), cat3: z.string().optional(),
+        contracts: z.number().optional(), qty: z.number().optional(),
+      },
+      async (row) => {
+        const supabase = getSupabaseAdmin()
+        if (!supabase) return text('오류: Supabase 미설정')
+        const { error } = await supabase.from('s2b_top100_rows').upsert([row], { onConflict: 'month,rank' })
+        if (error) return text(`오류: ${error.message}`)
+        return text('저장 완료')
+      }
+    )
+
+    server.tool(
+      'delete_row',
+      's2b_top100_rows에서 특정 month(전체) 또는 month+rank(단일 행)를 삭제한다.',
+      { month: z.string(), rank: z.number().optional() },
+      async ({ month, rank }) => {
+        const supabase = getSupabaseAdmin()
+        if (!supabase) return text('오류: Supabase 미설정')
+        let q = supabase.from('s2b_top100_rows').delete().eq('month', month)
+        if (rank !== undefined) q = q.eq('rank', rank)
+        const { error, count } = await q.select('*', { count: 'exact' })
+        if (error) return text(`오류: ${error.message}`)
+        return text(`삭제 완료 (${count ?? '?'}건)`)
+      }
+    )
+
+    server.tool(
+      'upload_excel',
+      'S2B에서 받은 .xls 파일(base64)을 서버에서 직접 파싱해서 s2b_top100_rows에 통째로 등록한다. 관리자 화면의 업로드 기능과 동일.',
+      { month: z.string().describe('연-월 형식, 예: 2026-07'), content_base64: z.string().describe('.xls 파일 내용을 base64로 인코딩한 문자열') },
+      async ({ month, content_base64 }) => {
+        const supabase = getSupabaseAdmin()
+        if (!supabase) return text('오류: Supabase 미설정')
+        let rows
+        try {
+          rows = parseS2bXls(Buffer.from(content_base64, 'base64'))
+        } catch (e) {
+          return text(`파싱 실패: ${e.message}`)
+        }
+        if (!rows.length) return text('파싱된 행이 0개')
+        const payload = rows.map((r) => ({ month, ...r }))
+        const { error } = await supabase.from('s2b_top100_rows').upsert(payload, { onConflict: 'month,rank' })
+        if (error) return text(`오류: ${error.message}`)
+        return text(`등록 완료: ${month} — ${rows.length}건`)
+      }
+    )
+
+    // ── 이 저장소 자체 파일/지침 ───────────────────────────────
     server.tool(
       'list_github_files',
       `${GITHUB_OWNER}/${GITHUB_REPO} 저장소의 특정 경로에 어떤 파일이 있는지 조회한다.`,
-      { path: z.string().optional().describe('조회할 경로, 비우면 루트') },
+      { path: z.string().optional() },
       async ({ path: p }) => {
         const res = await ghRequest(`contents/${p || ''}`)
         if (!res.ok) return text(`오류: ${res.status}`)
@@ -125,8 +229,7 @@ const handler = createMcpHandler(
         const res = await ghRequest(`contents/${p}`)
         if (!res.ok) return text(`오류: ${res.status}`)
         const json = await res.json()
-        const content = Buffer.from(json.content, 'base64').toString('utf-8')
-        return text(content)
+        return text(Buffer.from(json.content, 'base64').toString('utf-8'))
       }
     )
 
@@ -145,15 +248,12 @@ const handler = createMcpHandler(
 
     server.tool(
       'update_system_prompt',
-      '이 프로젝트(s2bedu)의 Claude 프로젝트 지침(claude/system_prompt.md)을 전체 덮어쓴다. GitHub 커밋으로 영구 저장됨.',
+      '이 프로젝트(s2bedu)의 Claude 프로젝트 지침(claude/system_prompt.md)을 전체 덮어쓴다.',
       { content: z.string(), commit_message: z.string().optional() },
       async ({ content, commit_message }) => {
         let sha
         const existing = await ghRequest(`contents/${SYSTEM_PROMPT_PATH}`)
-        if (existing.ok) {
-          const j = await existing.json()
-          sha = j.sha
-        }
+        if (existing.ok) sha = (await existing.json()).sha
         const res = await ghRequest(`contents/${SYSTEM_PROMPT_PATH}`, {
           method: 'PUT',
           body: JSON.stringify({
