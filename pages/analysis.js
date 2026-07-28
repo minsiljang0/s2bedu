@@ -1,6 +1,37 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import { getCachedAnalysis, listAnalysisYears, MONTH_LABEL, MONTH_KEYS } from '../lib/s2bAnalysis'
 import { monthLabel } from '../lib/s2bData'
+
+function VariantModal({ item, onClose }) {
+  if (!item) return null
+  const variants = item.variants || []
+  return (
+    <div
+      onClick={onClose}
+      style={{ position: 'fixed', inset: 0, zIndex: 3000, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.5)', padding: 16 }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{ background: '#fff', borderRadius: 16, width: '100%', maxWidth: 480, maxHeight: '80vh', display: 'flex', flexDirection: 'column', boxShadow: '0 20px 60px rgba(0,0,0,0.25)' }}
+      >
+        <div style={{ padding: '20px 24px', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div>
+            <div style={{ fontSize: 16, fontWeight: 800, color: 'var(--text)' }}>{item.cat3}</div>
+            <div style={{ fontSize: 12, color: 'var(--text3)', marginTop: 2 }}>{item.cat1} · 상품명 {variants.length}개 합산</div>
+          </div>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', color: 'var(--text3)', fontSize: 20, cursor: 'pointer' }}>✕</button>
+        </div>
+        <div style={{ padding: '12px 24px', overflowY: 'auto' }}>
+          {variants.length === 0 && <p style={{ fontSize: 13, color: 'var(--text3)', padding: '8px 0' }}>이 항목은 갱신 전 캐시라 상세 목록이 없어요 — "지금 분석 갱신" 후 다시 눌러보세요.</p>}
+          {variants.map((v, i) => (
+            <div key={i} style={{ padding: '8px 0', borderBottom: i < variants.length - 1 ? '1px solid var(--surface2)' : 'none', fontSize: 13, color: 'var(--text)' }}>{v}</div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export async function getServerSideProps({ query }) {
   const scope = typeof query.year === 'string' ? query.year : 'all'
@@ -16,6 +47,8 @@ function pillStyle(active) {
 }
 
 export default function AnalysisPage({ scope, years, data }) {
+  const [modalItem, setModalItem] = useState(null)
+
   if (!data) {
     return (
       <div className="empty-state">
@@ -153,7 +186,7 @@ export default function AnalysisPage({ scope, years, data }) {
             </thead>
             <tbody>
               {steady.map((p, i) => (
-                <tr key={p.cat1 + p.cat3 + i}>
+                <tr key={p.cat1 + p.cat3 + i} onClick={() => setModalItem(p)} style={{ cursor: 'pointer' }}>
                   <td>{i + 1}</td>
                   <td className="name-cell">{p.cat3}</td>
                   <td><span className="tag">{p.cat1}</span></td>
@@ -182,7 +215,11 @@ export default function AnalysisPage({ scope, years, data }) {
                 <p style={{ fontSize: 12, color: 'var(--text3)' }}>뚜렷한 시즌 특수 품목 없음</p>
               )}
               {byCalendarMonth[key].map((p, i) => (
-                <div key={p.cat1 + p.cat3 + i} style={{ fontSize: 12, marginBottom: 6, display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                <div
+                  key={p.cat1 + p.cat3 + i}
+                  onClick={() => setModalItem(p)}
+                  style={{ fontSize: 12, marginBottom: 6, display: 'flex', justifyContent: 'space-between', gap: 8, cursor: 'pointer' }}
+                >
                   <span style={{ color: 'var(--text)' }}>{p.cat3}</span>
                   <span style={{ color: 'var(--text3)', flexShrink: 0 }}>{(p.totalContracts || 0).toLocaleString()}건 · {(p.totalQty || 0).toLocaleString()}개</span>
                 </div>
@@ -191,6 +228,8 @@ export default function AnalysisPage({ scope, years, data }) {
           ))}
         </div>
       </section>
+
+      <VariantModal item={modalItem} onClose={() => setModalItem(null)} />
     </>
   )
 }
