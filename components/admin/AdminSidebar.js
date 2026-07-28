@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const NAV = [
   { id: 'upload', label: 'S2B 엑셀 등록', icon: '📊' },
 ]
@@ -34,13 +36,13 @@ export default function AdminSidebar({ activeTab, onNav, onLogout, mobile, open,
 
   const Header = (
     <div style={{ padding: '24px 20px 20px', borderBottom: '1px solid #d6e2f2', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+      <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
         <div style={{ width: 32, height: 32, background: 'linear-gradient(135deg,#2563eb,#3b82f6)', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>🏫</div>
         <div>
           <div style={{ fontSize: 15, fontWeight: 700, color: '#0f1a2b' }}>Admin Panel</div>
           <div style={{ fontSize: 11, color: '#8a9ab0', marginTop: 2 }}>S2Bedu</div>
         </div>
-      </div>
+      </Link>
       {mobile && <button onClick={onClose} style={{ background: 'none', border: 'none', color: '#8a9ab0', fontSize: 22, cursor: 'pointer' }}>✕</button>}
     </div>
   )

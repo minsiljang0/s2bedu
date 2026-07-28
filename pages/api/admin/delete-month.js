@@ -1,4 +1,5 @@
 import { getSupabaseAdmin, isAdmin } from '../../../lib/supabaseAdmin'
+import { refreshAnalysisCache } from '../../../lib/s2bAnalysis'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'method not allowed' })
@@ -12,6 +13,8 @@ export default async function handler(req, res) {
 
   const { error } = await supabase.from('s2b_top100_rows').delete().eq('month', month)
   if (error) return res.status(500).json({ error: error.message })
+
+  await refreshAnalysisCache()
 
   return res.status(200).json({ ok: true, month })
 }

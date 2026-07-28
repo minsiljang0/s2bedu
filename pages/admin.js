@@ -120,6 +120,10 @@ function UploadPanel({ adminToken, showToast }) {
       }
     }
     refresh()
+    // 파일 하나씩이 아니라 이 배치 업로드 전체가 끝난 뒤 딱 한 번만 분석을 다시 계산한다.
+    fetch('/api/admin/refresh-analysis', { method: 'POST', headers: { 'x-admin-token': adminToken } })
+      .then(() => showToast('📈 분석 갱신 완료'))
+      .catch(() => {})
   }
 
   const onDrop = (e) => {
