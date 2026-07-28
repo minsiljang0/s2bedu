@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import AdminSidebar from '../components/admin/AdminSidebar'
-import { S, Toast } from '../components/admin/AdminUI'
+import { S, Toast, DeleteModal } from '../components/admin/AdminUI'
 
 function fileToBase64(file) {
   return new Promise((resolve, reject) => {
@@ -66,6 +66,19 @@ function UploadPanel({ adminToken, showToast }) {
   const [queue, setQueue] = useState([]) // [{name, status: 'pending'|'done'|'error', message}]
   const [months, setMonths] = useState([])
   const [counts, setCounts] = useState({})
+  const [deleteTarget, setDeleteTarget] = useState(null) // { name: month }
+
+  const doDeleteMonth = async (m) => {
+    const res = await fetch('/api/admin/delete-month', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-admin-token': adminToken },
+      body: JSON.stringify({ month: m }),
+    })
+    const data = await res.json()
+    if (!res.ok) { showToast(`❌ ${data.error}`); return }
+    showToast(`🗑️ ${m} 삭제됨`)
+    refresh()
+  }
 
   const refresh = () => {
     fetch('/api/s2b/months').then((r) => r.json()).then((d) => {
@@ -150,9 +163,18 @@ function UploadPanel({ adminToken, showToast }) {
 
       <div style={S.card}>
         <div style={S.cardTitle}>등록된 월 ({months.length}개)</div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', gap: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
           {[...months].sort().reverse().map((m) => (
-            <div key={m} style={S.row}>
+            <div key={m} style={{ ...S.row, position: 'relative' }}>
+              <button
+                onClick={() => setDeleteTarget({ name: m })}
+                title="삭제"
+                style={{
+                  position: 'absolute', top: 6, right: 6, width: 20, height: 20,
+                  border: 'none', borderRadius: 6, background: '#fee2e2', color: '#dc2626',
+                  fontSize: 12, fontWeight: 700, cursor: 'pointer', lineHeight: '20px', padding: 0,
+                }}
+              >✕</button>
               <div style={{ fontWeight: 700, fontSize: 13 }}>{m}</div>
               <div style={{ fontSize: 11, color: '#8a9ab0', marginTop: 2 }}>{counts[m]}건</div>
             </div>
@@ -160,6 +182,12 @@ function UploadPanel({ adminToken, showToast }) {
           {months.length === 0 && <p style={{ fontSize: 13, color: '#8a9ab0' }}>아직 등록된 데이터가 없어요.</p>}
         </div>
       </div>
+
+      <DeleteModal
+        item={deleteTarget}
+        onCancel={() => setDeleteTarget(null)}
+        onConfirm={() => doDeleteMonth(deleteTarget.name)}
+      />
     </>
   )
 }

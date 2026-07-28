@@ -12,7 +12,6 @@ export default function Header() {
         </Link>
         <nav className="header-nav">
           <Link href="/" className={`nav-link${router.pathname === '/' ? ' active' : ''}`}>홈</Link>
-          <Link href="/trend" className={`nav-link${router.pathname === '/trend' ? ' active' : ''}`}>📈 AI코스웨어 트렌드</Link>
         </nav>
       </div>
     </header>

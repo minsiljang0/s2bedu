@@ -38,9 +38,19 @@ function tagRow(row) {
 async function readMonths() {
   const supabase = getSupabaseAdmin()
   if (!supabase) return []
-  const { data, error } = await supabase.from('s2b_top100_rows').select('month').order('month').range(0, 49999)
-  if (error || !data) return []
-  return [...new Set(data.map((r) => r.month))].sort()
+  const monthSet = new Set()
+  const PAGE = 1000
+  for (let offset = 0; ; offset += PAGE) {
+    const { data, error } = await supabase
+      .from('s2b_top100_rows')
+      .select('month')
+      .order('month')
+      .range(offset, offset + PAGE - 1)
+    if (error || !data) break
+    data.forEach((r) => monthSet.add(r.month))
+    if (data.length < PAGE) break
+  }
+  return [...monthSet].sort()
 }
 
 async function readMonthRows(month) {
