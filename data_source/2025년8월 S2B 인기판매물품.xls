@@ -1,0 +1,2887 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="application/vnd.ms-excel;charset=EUC-KR" />
+	<title>학교장터 전자계약지원시스템-협력사</title>
+	<style type="text/css">
+	.bluelist_tit_01{
+		height: 27px;
+		background-color: #EDF3FA;
+		border-right: 1px solid;
+		border-right-color: #D2DBE7;
+		border-bottom: 1px solid;
+		border-bottom-color: #D2DBE7;
+	    font-family: "돋움";
+	    font-size: 12px;
+		line-height: 18px;
+		color: #1F6CBA;
+		text-align: center;
+	}
+	
+	.td_graylist_r_01{
+		height: 23px;
+		background-color:#FCFCFC;
+		border-right: 1px solid;
+		border-right-color: #DCDCDC;
+		border-bottom:1px solid;
+		border-bottom-color: #DCDCDC;
+	    font-family: "돋움";
+		line-height:18px;
+		font-size: 9pt;
+		color: #666666;
+		text-align: right;
+		padding-right: 3px;
+	}
+	
+	.td_graylist_c_01{
+		height: 23px;
+		background-color:#FCFCFC;
+		border-right:1px solid;
+		border-right-color: #DCDCDC;
+		border-bottom:1px solid;
+		border-bottom-color: #DCDCDC;
+	    font-family: "돋움";
+		line-height:18px;
+		font-size: 9pt;
+		color: #666666;
+		text-align: center;
+	}
+	
+	</style>
+</head>
+<body>
+	<table>
+	<thead>
+	<tr>
+		<th class="bluelist_tit_01">순번</th>
+		<th class="bluelist_tit_01">상품명</th>
+		<th class="bluelist_tit_01">1차카테고리</th>
+		<th class="bluelist_tit_01">2차카테고리</th>
+		<th class="bluelist_tit_01">3차카테고리</th>
+		<th class="bluelist_tit_01">계약건수</th>
+		<th class="bluelist_tit_01">판매수량</th>
+		<th class="bluelist_tit_01">강원</th>
+		<th class="bluelist_tit_01">경기</th>
+		<th class="bluelist_tit_01">경남</th>
+		<th class="bluelist_tit_01">경북</th>
+		<th class="bluelist_tit_01">광주</th>
+		<th class="bluelist_tit_01">대구</th>
+		<th class="bluelist_tit_01">대전</th>
+		<th class="bluelist_tit_01">부산</th>
+		<th class="bluelist_tit_01">서울</th>
+		<th class="bluelist_tit_01">세종</th>
+		<th class="bluelist_tit_01">울산</th>
+		<th class="bluelist_tit_01">인천</th>
+		<th class="bluelist_tit_01">전남</th>
+		<th class="bluelist_tit_01">전북</th>
+		<th class="bluelist_tit_01">제주</th>
+		<th class="bluelist_tit_01">충남</th>
+		<th class="bluelist_tit_01">충북</th>
+	
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_c_01">조립식실외안전매트</td>
+		<td class="td_graylist_c_01">청소/생활</td>
+		<td class="td_graylist_c_01">생활잡화</td>
+		<td class="td_graylist_c_01">기타생활잡화</td>
+		<td class="td_graylist_r_01">18</td>
+		<td class="td_graylist_r_01">48,164</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">48,164</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_c_01">RFID Tag(ID81)_인쇄용</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">일반사무용품</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">20,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">20,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_c_01">아리웰 볼륨핏 보건용마스크</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">10,050</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">10,050</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">4</td>
+		<td class="td_graylist_c_01">문화상품권</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">도서/문화 상품권</td>
+		<td class="td_graylist_c_01">1만원 이상</td>
+		<td class="td_graylist_r_01">206</td>
+		<td class="td_graylist_r_01">8,492</td>
+		
+		<td class="td_graylist_r_01">1,011</td>
+		<td class="td_graylist_r_01">874</td>
+		<td class="td_graylist_r_01">674</td>
+		<td class="td_graylist_r_01">145</td>
+		<td class="td_graylist_r_01">65</td>
+		<td class="td_graylist_r_01">181</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,401</td>
+		<td class="td_graylist_r_01">2,872</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">70</td>
+		<td class="td_graylist_r_01">590</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">257</td>
+		<td class="td_graylist_r_01">352</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">5</td>
+		<td class="td_graylist_c_01">조립식실외매트(고급형)</td>
+		<td class="td_graylist_c_01">청소/생활</td>
+		<td class="td_graylist_c_01">생활잡화</td>
+		<td class="td_graylist_c_01">기타생활잡화</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">6,999</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">6,999</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">6</td>
+		<td class="td_graylist_c_01">아리웰 볼륨핏 보건용마스크</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">위생소모품(마스크 등)</td>
+		<td class="td_graylist_c_01">마스크</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">6,200</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">200</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">6,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">7</td>
+		<td class="td_graylist_c_01">풍림파마텍 덴탈 마스크 일회용</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">위생소모품(마스크 등)</td>
+		<td class="td_graylist_c_01">마스크</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">6,006</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">5,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">6</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">8</td>
+		<td class="td_graylist_c_01">신세계백화점 상품권 1만원</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">백화점/마트 상품권</td>
+		<td class="td_graylist_c_01">1만원 이상</td>
+		<td class="td_graylist_r_01">83</td>
+		<td class="td_graylist_r_01">5,134</td>
+		
+		<td class="td_graylist_r_01">54</td>
+		<td class="td_graylist_r_01">2,782</td>
+		<td class="td_graylist_r_01">99</td>
+		<td class="td_graylist_r_01">82</td>
+		<td class="td_graylist_r_01">87</td>
+		<td class="td_graylist_r_01">222</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">467</td>
+		<td class="td_graylist_r_01">750</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">393</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">198</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">9</td>
+		<td class="td_graylist_c_01">매쓰홀릭T 수학앱</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">수학교구</td>
+		<td class="td_graylist_c_01">수학 S/W</td>
+		<td class="td_graylist_r_01">14</td>
+		<td class="td_graylist_r_01">4,293</td>
+		
+		<td class="td_graylist_r_01">436</td>
+		<td class="td_graylist_r_01">1,991</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,045</td>
+		<td class="td_graylist_r_01">160</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">235</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">146</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">239</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">41</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">10</td>
+		<td class="td_graylist_c_01">AI활용 수학학습프로그램 사용권</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">수학교구</td>
+		<td class="td_graylist_c_01">수학 S/W</td>
+		<td class="td_graylist_r_01">6</td>
+		<td class="td_graylist_r_01">4,189</td>
+		
+		<td class="td_graylist_r_01">2,072</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,400</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">565</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">152</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">11</td>
+		<td class="td_graylist_c_01">교육용소프트웨어</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">5</td>
+		<td class="td_graylist_r_01">4,013</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">336</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,700</td>
+		<td class="td_graylist_r_01">977</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">12</td>
+		<td class="td_graylist_c_01">문화상품권 </td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">도서/문화 상품권</td>
+		<td class="td_graylist_c_01">1만원 미만</td>
+		<td class="td_graylist_r_01">98</td>
+		<td class="td_graylist_r_01">3,771</td>
+		
+		<td class="td_graylist_r_01">442</td>
+		<td class="td_graylist_r_01">84</td>
+		<td class="td_graylist_r_01">320</td>
+		<td class="td_graylist_r_01">112</td>
+		<td class="td_graylist_r_01">44</td>
+		<td class="td_graylist_r_01">693</td>
+		<td class="td_graylist_r_01">101</td>
+		<td class="td_graylist_r_01">841</td>
+		<td class="td_graylist_r_01">654</td>
+		<td class="td_graylist_r_01">46</td>
+		<td class="td_graylist_r_01">106</td>
+		<td class="td_graylist_r_01">216</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">20</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">12</td>
+		<td class="td_graylist_r_01">80</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">13</td>
+		<td class="td_graylist_c_01">신세계 백화점 상품권</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">백화점/마트 상품권</td>
+		<td class="td_graylist_c_01">1만원 이상</td>
+		<td class="td_graylist_r_01">61</td>
+		<td class="td_graylist_r_01">3,692</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,762</td>
+		<td class="td_graylist_r_01">51</td>
+		<td class="td_graylist_r_01">147</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">123</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">246</td>
+		<td class="td_graylist_r_01">144</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">171</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">48</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">14</td>
+		<td class="td_graylist_c_01">화재대피용 숨수건 </td>
+		<td class="td_graylist_c_01">산업안전시설용품</td>
+		<td class="td_graylist_c_01">안전/소방</td>
+		<td class="td_graylist_c_01">소방안전용품</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">3,623</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">3,623</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">15</td>
+		<td class="td_graylist_c_01">몽당 씨앗연필 식물키우기</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">기술/가정교구</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">3,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">3,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">16</td>
+		<td class="td_graylist_c_01">에어데이즈 비말차단 KF-AD 덴탈 마스크 대형</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">3,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">17</td>
+		<td class="td_graylist_c_01">RFID 물품관리시스템 구축용역 (물품1점당)</td>
+		<td class="td_graylist_c_01">용역/서비스</td>
+		<td class="td_graylist_c_01">유지/보수</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">2,968</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,968</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">18</td>
+		<td class="td_graylist_c_01">학교 창문 창틀 유리 복도 계단 로비 현관 대청소</td>
+		<td class="td_graylist_c_01">용역/서비스</td>
+		<td class="td_graylist_c_01">청소/위생용역</td>
+		<td class="td_graylist_c_01">건물위생관리</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">2,875</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,875</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">19</td>
+		<td class="td_graylist_c_01">반비 복사용지</td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">62</td>
+		<td class="td_graylist_r_01">2,824</td>
+		
+		<td class="td_graylist_r_01">1,144</td>
+		<td class="td_graylist_r_01">1,155</td>
+		<td class="td_graylist_r_01">45</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">270</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">30</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">60</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">100</td>
+		<td class="td_graylist_r_01">20</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">20</td>
+		<td class="td_graylist_c_01">예지미인 그날엔순면 개별포장 자판기용 생리대 중형</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">보건용품</td>
+		<td class="td_graylist_c_01">기타보건소모품</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">2,600</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,600</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">21</td>
+		<td class="td_graylist_c_01">스쿨플랫 수학 AI 코스웨어(구, 매쓰플랫)</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">수학교구</td>
+		<td class="td_graylist_c_01">수학 S/W</td>
+		<td class="td_graylist_r_01">6</td>
+		<td class="td_graylist_r_01">2,552</td>
+		
+		<td class="td_graylist_r_01">105</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">857</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,440</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">30</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">120</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">22</td>
+		<td class="td_graylist_c_01">컬쳐랜드 도서 문화상품권 1만원권</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">도서/문화 상품권</td>
+		<td class="td_graylist_c_01">1만원 이상</td>
+		<td class="td_graylist_r_01">83</td>
+		<td class="td_graylist_r_01">2,506</td>
+		
+		<td class="td_graylist_r_01">378</td>
+		<td class="td_graylist_r_01">244</td>
+		<td class="td_graylist_r_01">22</td>
+		<td class="td_graylist_r_01">259</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">113</td>
+		<td class="td_graylist_r_01">870</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">505</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">115</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">23</td>
+		<td class="td_graylist_c_01">리드 인공지능 문해력 진단 및 훈련 어플리케이션 국어 에듀테크 코스웨어</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">5</td>
+		<td class="td_graylist_r_01">2,479</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">180</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">96</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">18</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,321</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">864</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">24</td>
+		<td class="td_graylist_c_01">플랭스쿨 크레딧 요금</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영어교구</td>
+		<td class="td_graylist_c_01">영어 S/W</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">2,457</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,457</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_c_01">KFAD 비말차단 화이트 대형 마스크 의약외품</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">2,450</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,450</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">26</td>
+		<td class="td_graylist_c_01">클린퓨쳐 국내생산 비말차단 마스크</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">보건용품</td>
+		<td class="td_graylist_c_01">기타보건소모품</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">2,200</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">500</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,700</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">27</td>
+		<td class="td_graylist_c_01">신세계 상품권</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">백화점/마트 상품권</td>
+		<td class="td_graylist_c_01">1만원 이상</td>
+		<td class="td_graylist_r_01">24</td>
+		<td class="td_graylist_r_01">2,196</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,080</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">246</td>
+		<td class="td_graylist_r_01">84</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">663</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">123</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">28</td>
+		<td class="td_graylist_c_01">(주)우신주방 전말이 타원형5호</td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">소형식기</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">2,060</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,800</td>
+		<td class="td_graylist_r_01">260</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">29</td>
+		<td class="td_graylist_c_01">목장갑 </td>
+		<td class="td_graylist_c_01">청소/생활</td>
+		<td class="td_graylist_c_01">생활잡화</td>
+		<td class="td_graylist_c_01">장갑</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">2,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">30</td>
+		<td class="td_graylist_c_01">칼라인쇄 소봉투</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">지류</td>
+		<td class="td_graylist_c_01">봉투류</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">2,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">31</td>
+		<td class="td_graylist_c_01">크리넥스 대형 마스크 쿨 라이트핏 화이트 비말 마스크 1매</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">위생소모품(마스크 등)</td>
+		<td class="td_graylist_c_01">마스크</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">2,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">32</td>
+		<td class="td_graylist_c_01">학교 소봉투 모조120g 1도 먹인쇄(1000장부터 주문가능.인쇄무료)</td>
+		<td class="td_graylist_c_01">행사/판촉용품</td>
+		<td class="td_graylist_c_01">판촉용품</td>
+		<td class="td_graylist_c_01">1000원이하</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">2,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2,000</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">33</td>
+		<td class="td_graylist_c_01">클래스팅 AI</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">6</td>
+		<td class="td_graylist_r_01">1,985</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,960</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">34</td>
+		<td class="td_graylist_c_01">문교 물분필 워터 멀티초크펜 유리펜 칠판 보드마카</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">칠판/보드</td>
+		<td class="td_graylist_c_01">보드마카/보드지우개</td>
+		<td class="td_graylist_r_01">4</td>
+		<td class="td_graylist_r_01">1,946</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">600</td>
+		<td class="td_graylist_r_01">600</td>
+		<td class="td_graylist_r_01">240</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">506</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">35</td>
+		<td class="td_graylist_c_01">신세계 이마트 상품권 지류</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">백화점/마트 상품권</td>
+		<td class="td_graylist_c_01">1만원 이상</td>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_r_01">1,932</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">615</td>
+		<td class="td_graylist_r_01">126</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">21</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">657</td>
+		<td class="td_graylist_r_01">372</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">141</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">36</td>
+		<td class="td_graylist_c_01">에어데이즈 보건용 마스크 C타입 새부리형 KF94 대형 1매입</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">4</td>
+		<td class="td_graylist_r_01">1,920</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,500</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">420</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">37</td>
+		<td class="td_graylist_c_01">크린에이디 케이엠씨 비말차단 덴탈 마스크 KF-AD 대형</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">1,850</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">600</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,250</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">38</td>
+		<td class="td_graylist_c_01">치즈케이크샵 복사용지 A4 80g</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">지류</td>
+		<td class="td_graylist_c_01">복사용지</td>
+		<td class="td_graylist_r_01">42</td>
+		<td class="td_graylist_r_01">1,842</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,611</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">231</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">39</td>
+		<td class="td_graylist_c_01">문화상품권 </td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">도서/문화 상품권</td>
+		<td class="td_graylist_c_01">1만원 미만</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,710</td>
+		
+		<td class="td_graylist_r_01">1,710</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_c_01">강아지 포스트잇 점착형 홍보 판촉용 캐릭터 메모지</td>
+		<td class="td_graylist_c_01">행사/판촉용품</td>
+		<td class="td_graylist_c_01">판촉용품</td>
+		<td class="td_graylist_c_01">1000원이하</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,700</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,700</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">41</td>
+		<td class="td_graylist_c_01">에어데이즈 보건용 마스크 C타입 새부리형 KF94 중형 1매입</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">1,700</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,700</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">42</td>
+		<td class="td_graylist_c_01">고무기둥안전경계석 설치</td>
+		<td class="td_graylist_c_01">산업안전시설용품</td>
+		<td class="td_graylist_c_01">안전/소방</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">1,618</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,618</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">43</td>
+		<td class="td_graylist_c_01">간식 과자 꾸러미 선물 간식세트</td>
+		<td class="td_graylist_c_01">식품</td>
+		<td class="td_graylist_c_01">가공식품</td>
+		<td class="td_graylist_c_01">선물세트</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,600</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,600</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">44</td>
+		<td class="td_graylist_c_01">식판  </td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">소형식기</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,600</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,600</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">45</td>
+		<td class="td_graylist_c_01">종근당 비타C 젤리 비타민 1000mg </td>
+		<td class="td_graylist_c_01">식품</td>
+		<td class="td_graylist_c_01">가공식품</td>
+		<td class="td_graylist_c_01">건강식품</td>
+		<td class="td_graylist_r_01">4</td>
+		<td class="td_graylist_r_01">1,560</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,560</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">46</td>
+		<td class="td_graylist_c_01">(주)우신주방 전말이 3호 사찬세로형</td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">소형식기</td>
+		<td class="td_graylist_r_01">4</td>
+		<td class="td_graylist_r_01">1,550</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,550</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">47</td>
+		<td class="td_graylist_c_01">종이나라 산리오 양면무늬 색종이 뒷면 편지지(금연 등 홍보스티커부착가능)</td>
+		<td class="td_graylist_c_01">행사/판촉용품</td>
+		<td class="td_graylist_c_01">판촉용품</td>
+		<td class="td_graylist_c_01">5000원이하</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">1,512</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">12</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,500</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">48</td>
+		<td class="td_graylist_c_01">좋은느낌 날개형 중형 개별포장 생리대 무료 자판기용 생리대</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">보건용품</td>
+		<td class="td_graylist_c_01">기타보건소모품</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">1,510</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,510</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">49</td>
+		<td class="td_graylist_c_01">에어데이즈 KF94 슬림핏 대형 마스크</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,500</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,500</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">50</td>
+		<td class="td_graylist_c_01">에어데이즈 보건용 마스크 C타입 새부리형 KF94 소형 1매입</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">1,500</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,500</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">51</td>
+		<td class="td_graylist_c_01">복사용지 A4(85g)</td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">50</td>
+		<td class="td_graylist_r_01">1,488</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,488</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">52</td>
+		<td class="td_graylist_c_01">(본사) 알공 영어 Premium</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">1,454</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">800</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">222</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">432</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">53</td>
+		<td class="td_graylist_c_01">건식초크지우개리필</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">일반사무용품</td>
+		<td class="td_graylist_c_01">수정용품/지우개</td>
+		<td class="td_graylist_r_01">4</td>
+		<td class="td_graylist_r_01">1,451</td>
+		
+		<td class="td_graylist_r_01">841</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">610</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">54</td>
+		<td class="td_graylist_c_01">중질지</td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_r_01">1,438</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">30</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">20</td>
+		<td class="td_graylist_r_01">80</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,268</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">55</td>
+		<td class="td_graylist_c_01">반비 중질지</td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">42</td>
+		<td class="td_graylist_r_01">1,435</td>
+		
+		<td class="td_graylist_r_01">416</td>
+		<td class="td_graylist_r_01">449</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">10</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">510</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">10</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">56</td>
+		<td class="td_graylist_c_01">일체형 원형포인트 설치</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">체육교구</td>
+		<td class="td_graylist_c_01">육상용품</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">1,428</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">798</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">630</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">57</td>
+		<td class="td_graylist_c_01">코드모스 AI코스웨어</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">9</td>
+		<td class="td_graylist_r_01">1,356</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">128</td>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_r_01">508</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">200</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">240</td>
+		<td class="td_graylist_r_01">240</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">58</td>
+		<td class="td_graylist_c_01">관급봉투</td>
+		<td class="td_graylist_c_01">청소/생활</td>
+		<td class="td_graylist_c_01">청소용품</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">1,350</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,350</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">59</td>
+		<td class="td_graylist_c_01">식판/스텐(사각4찬)-중,고등학교(20호)</td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">소형식기</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,350</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,350</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">60</td>
+		<td class="td_graylist_c_01">컬쳐랜드 도서 문화상품권 5천원권</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">도서/문화 상품권</td>
+		<td class="td_graylist_c_01">1만원 미만</td>
+		<td class="td_graylist_r_01">49</td>
+		<td class="td_graylist_r_01">1,307</td>
+		
+		<td class="td_graylist_r_01">298</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">53</td>
+		<td class="td_graylist_r_01">37</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">21</td>
+		<td class="td_graylist_r_01">375</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">486</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">37</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">61</td>
+		<td class="td_graylist_c_01">(본사) 알공 영어</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">1,254</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">33</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">8</td>
+		<td class="td_graylist_r_01">1,213</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">62</td>
+		<td class="td_graylist_c_01">반비 복사용지</td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">28</td>
+		<td class="td_graylist_r_01">1,238</td>
+		
+		<td class="td_graylist_r_01">718</td>
+		<td class="td_graylist_r_01">210</td>
+		<td class="td_graylist_r_01">20</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">35</td>
+		<td class="td_graylist_r_01">15</td>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">200</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">63</td>
+		<td class="td_graylist_c_01">호미호비 아크릴 무드등 만들기 미니우드 스탠드형 DIY 키트 (펜 포함)</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">미술교구</td>
+		<td class="td_graylist_c_01">공예/조소/판화</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,200</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,200</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">64</td>
+		<td class="td_graylist_c_01">크림이 복사용지 A4 80g</td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">27</td>
+		<td class="td_graylist_r_01">1,179</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">969</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">210</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">65</td>
+		<td class="td_graylist_c_01">다원복사용지  </td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_r_01">1,163</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">30</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">20</td>
+		<td class="td_graylist_r_01">35</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,053</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">66</td>
+		<td class="td_graylist_c_01">매트플러스 조립식 퍼즐형 현관매트 미끄럼방지매트(설치포함)</td>
+		<td class="td_graylist_c_01">산업안전시설용품</td>
+		<td class="td_graylist_c_01">안전/소방</td>
+		<td class="td_graylist_c_01">안전매트</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,144</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,144</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">67</td>
+		<td class="td_graylist_c_01">엘리스코딩 AI(데이터분석)</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,140</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,140</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">68</td>
+		<td class="td_graylist_c_01">엘리스스쿨 LXP(AI 코스웨어)  Basic 플랜</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">영상/소프트웨어</td>
+		<td class="td_graylist_c_01">소프트웨어</td>
+		<td class="td_graylist_r_01">5</td>
+		<td class="td_graylist_r_01">1,135</td>
+		
+		<td class="td_graylist_r_01">77</td>
+		<td class="td_graylist_r_01">200</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">414</td>
+		<td class="td_graylist_r_01">444</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">69</td>
+		<td class="td_graylist_c_01">옥수저 땡땡이 수저 젓가락세트 </td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">유아용수저</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,100</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,100</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">70</td>
+		<td class="td_graylist_c_01">마스크 넥워머 썬차단 쿨아이스 남녀공용</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">위생소모품(마스크 등)</td>
+		<td class="td_graylist_c_01">마스크</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,100</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,100</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">71</td>
+		<td class="td_graylist_c_01">플루 휴대용 클린 손소독제 플루겔 30ml (홀더포함) </td>
+		<td class="td_graylist_c_01">청소/생활</td>
+		<td class="td_graylist_c_01">세제/왁스</td>
+		<td class="td_graylist_c_01">손소독/세정</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,100</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,100</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">72</td>
+		<td class="td_graylist_c_01">프린트 및 복사용지 청춘D </td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">27</td>
+		<td class="td_graylist_r_01">1,083</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">874</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">99</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">90</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">20</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">73</td>
+		<td class="td_graylist_c_01">(주)우신주방 전말이 특3호</td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">소형식기</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,050</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,050</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">74</td>
+		<td class="td_graylist_c_01">육각 무지개 지우개 연필(1000개이상 인쇄무료.2개이상 세팅가능)</td>
+		<td class="td_graylist_c_01">행사/판촉용품</td>
+		<td class="td_graylist_c_01">판촉용품</td>
+		<td class="td_graylist_c_01">1000원이하</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,050</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,050</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">75</td>
+		<td class="td_graylist_c_01">도서문화상품권</td>
+		<td class="td_graylist_c_01">상품권</td>
+		<td class="td_graylist_c_01">도서/문화 상품권</td>
+		<td class="td_graylist_c_01">1만원 이상</td>
+		<td class="td_graylist_r_01">28</td>
+		<td class="td_graylist_r_01">1,043</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">60</td>
+		<td class="td_graylist_r_01">44</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">6</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">35</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">878</td>
+		<td class="td_graylist_r_01">20</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">76</td>
+		<td class="td_graylist_c_01">복사용지</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">지류</td>
+		<td class="td_graylist_c_01">복사용지</td>
+		<td class="td_graylist_r_01">22</td>
+		<td class="td_graylist_r_01">1,036</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">836</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">70</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">130</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">77</td>
+		<td class="td_graylist_c_01">밀크 복사용지 A4 80g 2500매</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">지류</td>
+		<td class="td_graylist_c_01">복사용지</td>
+		<td class="td_graylist_r_01">26</td>
+		<td class="td_graylist_r_01">1,018</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">315</td>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">354</td>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">217</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">40</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">78</td>
+		<td class="td_graylist_c_01">금연 홍보용 물티슈</td>
+		<td class="td_graylist_c_01">산업안전시설용품</td>
+		<td class="td_graylist_c_01">안전/소방</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">79</td>
+		<td class="td_graylist_c_01">에버렉스 KF94 황사 방역 보건용 귀편한 마스크 화이트 대형</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">위생소모품(마스크 등)</td>
+		<td class="td_graylist_c_01">마스크</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">80</td>
+		<td class="td_graylist_c_01">연합화일176 정품형 L자화일 엘홀더 크리어투명화일 엘자투명화일 인쇄</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">화일/바인더</td>
+		<td class="td_graylist_c_01">특수화일</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">81</td>
+		<td class="td_graylist_c_01">자바 제트3볼 비즈 베이비 초저점도 유성 3색 볼펜 </td>
+		<td class="td_graylist_c_01">행사/판촉용품</td>
+		<td class="td_graylist_c_01">판촉용품</td>
+		<td class="td_graylist_c_01">5000원이하</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">82</td>
+		<td class="td_graylist_c_01">칼라인쇄 행정 편지봉투 문서 서류봉투 규격봉투제작</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">지류</td>
+		<td class="td_graylist_c_01">봉투류</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">83</td>
+		<td class="td_graylist_c_01"> 퓨어라이프 KF94 새부리형 마스크</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">84</td>
+		<td class="td_graylist_c_01">안대(눈가리개)</td>
+		<td class="td_graylist_c_01">학습교구/기자재</td>
+		<td class="td_graylist_c_01">과학교구</td>
+		<td class="td_graylist_c_01">실험기자재</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">85</td>
+		<td class="td_graylist_c_01">에어데이즈 KF94 슬림핏 화이트 새부리형 마스크 </td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">86</td>
+		<td class="td_graylist_c_01">휴그린 황사방역마스크 KF94</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">1,000</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">1,000</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">87</td>
+		<td class="td_graylist_c_01">디펜스 매일편한 비말차단 마스크 KF-AD 화이트 새부리형 부직포귀끈</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">990</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">990</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">88</td>
+		<td class="td_graylist_c_01">고무기둥 안전경계석</td>
+		<td class="td_graylist_c_01">산업안전시설용품</td>
+		<td class="td_graylist_c_01">안전/소방</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">990</td>
+		
+		<td class="td_graylist_r_01">480</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">510</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">89</td>
+		<td class="td_graylist_c_01">예지미인 오가닛 내추럴 자판기용 생리대 개별포장 (대형)</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">보건용품</td>
+		<td class="td_graylist_c_01">기타보건소모품</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">960</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">960</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">90</td>
+		<td class="td_graylist_c_01">예지미인 그날엔 순면 오닉골드 자판기용 생리대 중형 1매</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">위생소모품(마스크 등)</td>
+		<td class="td_graylist_c_01">기타 </td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">960</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">960</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">91</td>
+		<td class="td_graylist_c_01">에어데이즈 KF94 마스크 화이트 대형 새부리형</td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">의약외품</td>
+		<td class="td_graylist_c_01">마스크/방한대</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">960</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">960</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">92</td>
+		<td class="td_graylist_c_01">복사용지</td>
+		<td class="td_graylist_c_01">중기간경쟁제품</td>
+		<td class="td_graylist_c_01">종이원료및종이제품</td>
+		<td class="td_graylist_c_01">인쇄용지및필기용지</td>
+		<td class="td_graylist_r_01">23</td>
+		<td class="td_graylist_r_01">938</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">938</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">93</td>
+		<td class="td_graylist_c_01">다원점보롤화장지</td>
+		<td class="td_graylist_c_01">청소/생활</td>
+		<td class="td_graylist_c_01">화장지/타올</td>
+		<td class="td_graylist_c_01">롤화장지</td>
+		<td class="td_graylist_r_01">60</td>
+		<td class="td_graylist_r_01">931</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">90</td>
+		<td class="td_graylist_r_01">2</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">25</td>
+		<td class="td_graylist_r_01">10</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">45</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">10</td>
+		<td class="td_graylist_r_01">749</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">94</td>
+		<td class="td_graylist_c_01">중질지(꿈드래)A4</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">지류</td>
+		<td class="td_graylist_c_01">중질지/신문용지</td>
+		<td class="td_graylist_r_01">28</td>
+		<td class="td_graylist_r_01">929</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">929</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">95</td>
+		<td class="td_graylist_c_01">복사용지 A4</td>
+		<td class="td_graylist_c_01">문구사무용품</td>
+		<td class="td_graylist_c_01">지류</td>
+		<td class="td_graylist_c_01">복사용지</td>
+		<td class="td_graylist_r_01">37</td>
+		<td class="td_graylist_r_01">900</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">900</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">96</td>
+		<td class="td_graylist_c_01">아동용 3중필터 일회용 마스크 비말 덴탈 </td>
+		<td class="td_graylist_c_01">보건/위생</td>
+		<td class="td_graylist_c_01">위생소모품(마스크 등)</td>
+		<td class="td_graylist_c_01">마스크</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">900</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">900</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">97</td>
+		<td class="td_graylist_c_01">수저로얄(고급)</td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">소형식기</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">900</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">900</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">98</td>
+		<td class="td_graylist_c_01">수저로얄(고급)</td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">소형식기</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">900</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">900</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">99</td>
+		<td class="td_graylist_c_01">치약칫솔세트</td>
+		<td class="td_graylist_c_01">청소/생활</td>
+		<td class="td_graylist_c_01">생활잡화</td>
+		<td class="td_graylist_c_01">치약/칫솔</td>
+		<td class="td_graylist_r_01">1</td>
+		<td class="td_graylist_r_01">900</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">900</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+	<tr>
+		<td class="td_graylist_r_01">100</td>
+		<td class="td_graylist_c_01">투명컵 (용량400ml / 일회용 테이크아웃잔 아이스컵) 1개</td>
+		<td class="td_graylist_c_01">급식(주방)</td>
+		<td class="td_graylist_c_01">급식(주방)기구/소모품</td>
+		<td class="td_graylist_c_01">기타</td>
+		<td class="td_graylist_r_01">3</td>
+		<td class="td_graylist_r_01">900</td>
+		
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">900</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+		<td class="td_graylist_r_01">0</td>
+	
+	</tr>		
+
+	</tbody>
+	</table>
+</body>
+</html>
