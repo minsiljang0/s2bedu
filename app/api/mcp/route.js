@@ -38,7 +38,7 @@ function tagRow(row) {
 async function readMonths() {
   const supabase = getSupabaseAdmin()
   if (!supabase) return []
-  const { data, error } = await supabase.from('s2b_top100_rows').select('month').order('month')
+  const { data, error } = await supabase.from('s2b_top100_rows').select('month').order('month').range(0, 49999)
   if (error || !data) return []
   return [...new Set(data.map((r) => r.month))].sort()
 }
